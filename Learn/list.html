@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="t3.css">
+        <title>list</title>
+    </head>
+    <body>
+        <div style="background-color: rgba(0, 0, 0, 0.404);">
+            <h1 style="margin-top: 0;">Structure Concepts</h1>
+            <h1>Navigation Concepts</h1>
+            <nav class="navigation">
+                <ul>
+                    <li><a href="#1">Ordered List</a></li>
+                    <li><a href="#2">Description List</a></li>
+                    <li><a href="#3">Nested List</a></li>
+                    <li><a href="#4">Styling Concepts</a></li>
+                </ul>
+            </nav>
+            <!-- Unordered list -->
+            <h4>Unordered List</h4>
+            <ul>
+                <li>Orange</li>
+                <li>Green</li>
+                <li>Blue</li>
+            </ul>
+            <!-- Ordered List -->
+            <h4 id="1">Ordered List</h4>
+            <ol>
+                <li>Head north on N Halsted St</li>
+                <li>Turn right on W Diversey Pkwy</li>
+                <li>Turn left on N Orchard St</li>
+            </ol>
+            <!-- Ordered list with start attribute -->
+            <ol start="25">    
+                <li>Head north on N Halsted St</li>
+                <li>Turn right on W Diversey Pkwy</li>
+                <li>Turn left on N Orchard St</li>
+            </ol>
+            <!-- Ordered list with reverse attribute -->
+            <ol start="25" reversed>
+                <li>Head north on N Halsted St</li>
+                <li>Turn right on W Diversey Pkwy</li>
+                <li>Turn left on N Orchard St</li>
+            </ol>
+            <!-- Ordered list with value attribute -->
+            <ol>
+                <li>Head north on N Halsted St</li>
+                <li value="21">Turn right on W Diversey Pkwy</li>
+                <li value="36">Turn left on N Orchard St</li>
+            </ol>
+            <!-- Description list -->
+            <h4 id="2">Description List</h4>
+            <dl>
+                <dt>study</dt>
+                <dd>The devotion of time and attention to acquiring knowledge on an academic subject, especially by means of books
+                </dd>
+                <dt>design</dt>
+                <dd>A plan or drawing produced to show the look and function or workings of a building, garment, or other object
+                    before it is built or made</dd>
+                <dd>Purpose, planning, or intention that exists or is thought to exist behind an action, fact, or material object
+                </dd>
+                <dt>business</dt>
+                <dt>work</dt>
+                <dd>A person's regular occupation, profession, or trade</dd>
+            </dl>
+            <!-- Nesting lists  -->
+            <h4 id="3">Nested List</h4>
+            <ol>
+                <li>
+                    <ul>
+                        <li>Orange</li>
+                        <li>Green</li>
+                        <li>Blue</li>
+                    </ul>
+                </li>
+                <li>
+                    <dl>
+                        <dt>study</dt>
+                        <dd>The devotion of time and attention to acquiring knowledge on an academic subject, especially by means of books
+                        </dd>
+                        <dt>design</dt>
+                        <dd>A plan or drawing produced to show the look and function or workings of a building, garment, or other object
+                            before it is built or made</dd>
+                        <dd>Purpose, planning, or intention that exists or is thought to exist behind an action, fact, or material object
+                        </dd>
+                        <dt>business</dt>
+                        <dt>work</dt>
+                        <dd>A person's regular occupation, profession, or trade</dd>
+                    </dl>
+                </li>
+            </ol>
+
+
+            <!-- Styling -->
+            <h1 id="4">Styling Concepts</h1>
+            <ul style="list-style-type: square;">
+                <li>Orange</li>
+                <li>Green</li>
+                <li>Blue</li>
+            </ul>
+            <ul style="list-style-type: circle;">
+                <li>Orange</li>
+                <li>Green</li>
+                <li>Blue</li>
+            </ul>
+            <ul style="list-style-type: disc;">
+                <li>Orange</li>
+                <li>Green</li>
+                <li>Blue</li>
+            </ul>
+            <ul style="list-style-type: decimal;">
+                <li>Orange</li>
+                <li>Green</li>
+                <li>Blue</li>
+            </ul>
+            <ul style="list-style-type: decimal-leading-zero;">
+                <li>Orange</li>
+                <li>Green</li>
+                <li>Blue</li>
+            </ul>
+            <ul style="list-style-type: lower-roman;">
+                <li>Orange</li>
+                <li>Green</li>
+                <li>Blue</li>
+            </ul>
+            <ul style="list-style-type: upper-roman;">
+                <li>Orange</li>
+                <li>Green</li>
+                <li>Blue</li>
+            </ul>
+            <ul style="list-style-type: lower-greek;">
+                <li>Orange</li>
+                <li>Green</li>
+                <li>Blue</li>
+            </ul>
+            
+            <ul style="list-style-type: lower-alpha;">
+                <li>Orange</li>
+                <li>Green</li>
+                <li>Blue</li>
+            </ul>
+            <ul style="list-style-type: upper-alpha;">
+                <li>Orange</li>
+                <li>Green</li>
+                <li>Blue</li>
+            </ul>
+            <h5>displayed as inline block</h5>
+            <ul>
+                <li style="display: inline-block;margin: 0 10px;">Orange</li>
+                <li style="display: inline-block;margin: 0 10px;">Green</li>
+                <li style="display: inline-block;margin: 0 10px;">Blue</li>
+            </ul>
+            <!-- <ul>
+                <li style='background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/29841/arrow.png") 0 50% no-repeat;
+            background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/29841/arrow.svg") 0 50% no-repeat;
+            list-style-type: none;
+            padding-left: 12px;'>Orange</li>
+                <li style="display: inline-block;margin: 0 10px;">Green</li>
+                <li style="display: inline-block;margin: 0 10px;">Blue</li>
+            </ul> -->
+        </div>
+
+    </body>
+</html>

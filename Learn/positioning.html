@@ -1,0 +1,43 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Positioning</title>
+        <link rel="stylesheet" href="t1.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    </head>
+    <body class="whole">
+        <header>
+            <h1>Positioning</h1>
+        </header>
+        
+        <div class="container">
+            
+            <h2>container</h2>
+            <div>
+                <section>
+                    <h5>left section</h5>
+                    <p style="text-align: justify; margin: 10px;">When building a website, it is always best to write modular styles that may be reused elsewhere, and reusable layouts are high on the list of reusable code. Layouts can be created using either floats or inline-block elements, but which works best and why?<br><br>
+
+Whether it’s better to use floats or inline-block elements to lay out the structure of a page is open to debate. My approach is to use inline-block elements to create the grid—or layout—of a page and to then use floats when I want content to wrap around a given element (as floats were intended to do with images). Generally, I also find inline-block elements easier to work with.
+
+That said, use whatever works best for you. If you are comfortable with one approach over the other, then go for it.<br><br>
+
+Currently there are new CSS specifications in the works—specifically flex- and grid- based properties—that will help address how to best lay out pages. Keep an eye out for these methods as they begin to surface.</p>
+                </section>
+            
+                <aside>
+                    <h5>right section</h5>
+                    <p style="text-align: justify; margin: 5px;">In addition to using floats, another way we can position content is by using the display property in conjunction with the inline-block value. The inline-block method, as we’ll discuss, is primarily helpful for laying out pages or for placing elements next to one another within a line.
+                    <br><br>
+Recall that the inline-block value for the display property will display elements within a line while allowing them to accept all box model properties, including height, width, padding, border, and margin. Using inline-block elements allows us to take full advantage of the box model without having to worry about clearing any floats.</p>
+                </aside>
+            </div>
+        </div>
+            
+        <footer>
+            <h3>footer</h3>
+            <p>&copy;name</p>
+        </footer>
+    </body>
+</html>
