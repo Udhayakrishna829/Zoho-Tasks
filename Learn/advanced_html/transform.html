@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="transform.css">
+    <title>Transform</title>
+</head>
+
+<body>
+    <div class="cube-container spin">
+        <div class="cube">
+            <figure class="side front">1</figure>
+            <figure class="side back">2</figure>
+            <figure class="side left">3</figure>
+            <figure class="side right">4</figure>
+            <figure class="side top">5</figure>
+            <figure class="side bottom">6</figure>
+        </div>
+    </div>
+    <h5 align=center style="margin-left:50px;padding:10px;">jquery with animation</h5>
+    <div style="margin-top:70px;display: flex;justify-content: space-around;">
+        <button id="animation">click</button>
+        <button id="remove">remove a bike</button>
+        <button id="clear">clear</button>
+    </div>
+    <div id="bike-container"></div>
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <script>
+        $("#animation").click(function(){
+            $("#bike-container").append("<img class='bike' src='bike.png'></img>");
+        });
+        $("#clear").click(function(){
+            $("#bike-container").replaceWith("<div id='bike-container'></div>");
+        });
+        $("#remove").click(function(){
+            $("#bike-container img").first().remove();
+        });
+    </script>
+</body>
+
+</html>

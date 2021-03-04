@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>JQuery</title>
+        <style>
+            body{
+                padding-bottom: 30px;
+                height: 100%;
+            }
+            #p1 {
+                color: rgb(160, 160, 23);
+            }
+            div {
+                background: #99e5f1;
+                width: 60px;
+                height: 60px;
+                margin: 50px 10px;
+                float: left;
+                border: 2px solid blue;
+            }
+            .dynamic{
+                background: #2db34a;
+                border: 2px solid #ff7b29;
+                position: relative;
+                left: -10px;
+                top: 40px;
+            }
+            .active {
+                color: #900;
+            }
+            .inside {
+                background-color: rgb(0, 183, 255);
+                border-radius: 10px;
+            }
+            button {
+                background-color: rgb(178, 247, 157);
+                border-radius: 5px;
+            }
+            button:focus{
+                outline: unset;
+            }
+        </style>
+    </head>
+    <body>
+        <h1 style="text-align:center">Topic: JQuery </h1>
+        <h5>Example for Selector : </h5>
+        <p id="p1" style='display:inline'>I would like to say: </p>
+
+        <br>
+
+        <h1 style="text-align:center">Selection</h1>
+
+        <select name="Courses" multiple="multiple">
+            <option >HTML</option>
+            <option>CSS</option>
+            <option>JS</option>
+            <option>C</option>
+            <option>C++</option>
+            <option>Python</option>
+        </select>
+        <br><br>
+        <p style='display:inline'>You Have Selected : </p>
+        <h3 id="1"  style='display:inline'></h3><hr>
+
+        <h1 id="2" style="text-align:center">Changing background color</h1>
+        <h4 id="dummy">Click the button</h4>
+        <button id="10">Click</button>
+        
+        <hr>
+
+        <h4>Event Handler :</h4>
+        <p id="5">Custom event.</p>
+        <button id="button">New event</button>
+        <span style="display:none;"></span>
+
+        <hr>
+
+        <h4>position changing</h4>
+        <div></div>
+        <div></div>
+        <button id="20" style="float:left;clear: left;margin-top:50px;">try</button>
+        <button id="30" style="float:left;clear: left;margin-top:50px;display:none;">back</button>
+
+        
+        <h1 style="float:left;clear: left;text-align:center;width:100%;padding-top:50px;border-top: 0.4px solid;">Fading Effect</h1>
+        <button id="40" style="float:left;clear: left">Fade Toggle</button>
+        <p id="para" style="float:left;clear: left;">This will fadeout</p>
+        <h3 id="log" style="float:left;clear: left;"></h3>
+        
+        <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+
+        <script src="scripts.js"></script>
+
+    </body>
+</html>
